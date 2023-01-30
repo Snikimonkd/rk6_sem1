@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.24.2)
+
+set(CVP_SOURCE_LIB consoleVisualizationPlugin.cpp)
+set(FVP_SOURCE_LIB fileVisualizationPlugin.cpp)
+set(RK4CP_SOURCE_LIB RungeKutta4ComputePlugin.cpp)
+set(AB2CP_SOURCE_LIB AdamsBashforth2ComputePlugin.cpp)
+set(AB4CP_SOURCE_LIB AdamsBashforth4ComputePlugin.cpp)
+
+add_library(cvp SHARED ${CVP_SOURCE_LIB})
+add_library(fvp SHARED ${FVP_SOURCE_LIB})
+add_library(rk4cp SHARED ${RK4CP_SOURCE_LIB})
+add_library(ab2cp SHARED ${AB2CP_SOURCE_LIB})
+add_library(ab4cp SHARED ${AB4CP_SOURCE_LIB})
+
+target_include_directories(cvp PRIVATE ../include)
+target_include_directories(fvp PRIVATE ../include)
+target_include_directories(rk4cp PRIVATE ../include)
+target_include_directories(ab2cp PRIVATE ../include)
+target_include_directories(ab4cp PRIVATE ../include)

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24.2)
+
+project(lab1_ab2)
+
+set(AB2_SOURCE_LIB ab2.c)
+
+add_library(ab2 SHARED ${AB2_SOURCE_LIB})

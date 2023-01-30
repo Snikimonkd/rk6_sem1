@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24.2)
+
+project(lab1_rk4)
+
+set(RK4_SOURCE_LIB rk4.c)
+
+add_library(rk4 SHARED ${RK4_SOURCE_LIB})

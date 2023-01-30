@@ -1,0 +1,7 @@
+set terminal png size 1100,750
+set output 'temperature_field.png'
+set palette defined ( 0 "blue", 1 "cyan", 2 "green", 3 "yellow", 4 "red" )
+list=system('ls data | sort -V')
+set xrange[0:8]
+set yrange[0:6]
+plot 'data/time15999.txt' u 1:2:3 w image notitle

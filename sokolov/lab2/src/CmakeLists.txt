@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.24.2)
+
+project(lab2)
+
+set(SOURCE main.cpp)
+
+add_subdirectory(src)
+
+add_executable(main ${SOURCE})
+target_compile_features(main PRIVATE cxx_std_17)
+
+target_include_directories(main PRIVATE include)

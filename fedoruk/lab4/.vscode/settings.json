@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "memory_resource": "cpp",
+        "fstream": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "__config": "cpp",
+        "*.tcc": "cpp",
+        "chrono": "cpp",
+        "streambuf": "cpp",
+        "ostream": "cpp"
+    }
+}
